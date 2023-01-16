@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -70,12 +70,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl_notdevelopment_runinbackground.loader.js";
+      var loaderUrl = buildUrl + "/unitybuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl_notdevelopment_runinbackground.data",
-        frameworkUrl: buildUrl + "/webgl_notdevelopment_runinbackground.framework.js",
-        codeUrl: buildUrl + "/webgl_notdevelopment_runinbackground.wasm",
-        symbolsUrl: buildUrl + "/webgl_notdevelopment_runinbackground.symbols.json",
+        dataUrl: buildUrl + "/unitybuild.data",
+        frameworkUrl: buildUrl + "/unitybuild.framework.js",
+        codeUrl: buildUrl + "/unitybuild.wasm",
+        symbolsUrl: buildUrl + "/unitybuild.symbols.json",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ThomasMOre",
         productName: "Utopia 2",
@@ -108,8 +108,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
